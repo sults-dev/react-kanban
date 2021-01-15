@@ -35,6 +35,7 @@ function Column({
               minHeight: '28px',
               display: 'inline-block',
               verticalAlign: 'top',
+              border: '1px solid red',
               ...columnProvided.draggableProps.style,
             }}
             className='react-kanban-column'
