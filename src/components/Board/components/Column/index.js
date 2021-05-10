@@ -134,11 +134,13 @@ function Column({
               </Droppable>
             ) : (
               <DroppableColumn droppableId={String(children.id)}>
-                {children.cards.length ? (
-                  children.cards.map((card, index) => getCard(card, index))
-                ) : (
-                  <div className='react-kanban-card-skeleton' />
-                )}
+                <div className='react-kanban-column-cards-wrapper'>
+                  {children.cards.length ? (
+                    children.cards.map((card, index) => getCard(card, index))
+                  ) : (
+                    <div className='react-kanban-card-skeleton' />
+                  )}
+                </div>
               </DroppableColumn>
             )}
           </div>
