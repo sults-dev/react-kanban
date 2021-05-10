@@ -1,6 +1,5 @@
 node_modules
 coverage
-dist
 yarn.lock
 .DS_Store
 cypress/screenshots
@@ -8,3 +7,4 @@ cypress/screenshots
 unit-coverage
 .projections.json
 .tool-versions
+.dist
